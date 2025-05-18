@@ -26,7 +26,7 @@ const HomePage = () => (
     <Ourpage />
     <Bgimage />
     <Footer />
-    
+
   </>
 );
 
@@ -45,9 +45,9 @@ const router = createBrowserRouter( [
   },
   {
     path: "/Gallery",
-    element: <Gallery /> 
-   
-    
+    element: <Gallery />
+
+
   },
   {
     path: "/aboute",

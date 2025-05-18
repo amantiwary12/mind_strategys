@@ -29,7 +29,8 @@ const beliefs = [
 
 const Ourpage = () => {
   return (
-    <div>
+    <>
+      <div>
          {/* Beliefs Section */}
       <div className="h-screen w-[99vw] flex flex-row justify-between px-4">
         <div className="flex flex-col justify-center items-center w-1/2 px-[100px] my-[100px] text-xl">
@@ -57,13 +58,9 @@ const Ourpage = () => {
       </div>
       
     </div>
-  )
-}
-
-export default Ourpage
-
- {/* Beliefs Section */}
-      <div className="h-screen w-screen flex flex-row justify-between px-4">
+    
+{/* Beliefs Section */}
+<div className="h-screen w-screen flex flex-row justify-between px-4">
         <div className="flex flex-col justify-center items-center w-1/2 px-[100px] my-[100px] text-xl">
           <h1 className="text-6xl text-center">
             Our true
@@ -87,3 +84,9 @@ export default Ourpage
           ))}
         </div>
       </div>
+    </>
+  )
+}
+
+
+          export default Ourpage
