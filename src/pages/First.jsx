@@ -54,7 +54,7 @@ const First = () => {
                         The Best Place to Start Your Adventure
                     </div>
 
-                    <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-sans leading-tight transition-transform duration-[2000ms] hover:translate-y-[-10px]">
+                    <h1 className="text-xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-7xl font-sans leading-tight transition-transform duration-[2000ms] hover:translate-y-[-10px]">
                         Embark on <i>Journey</i><br />
                         not <i>just</i> destinations<br />
                         with our <i>trips.</i>

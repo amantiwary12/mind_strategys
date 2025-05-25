@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
+import Chatai from '../Chatai/Chatai';
 
 
 const Tips = () => {
@@ -123,17 +124,22 @@ const Tips = () => {
 
         <h1 className="text-7xl italic text-center mb-20 pt-20">Top Tour Packages available  </h1>
 
+
+      
+          <Chatai/>
+
+
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
           {tours.map( ( tour ) => (
-            <div 
+            <div
               key={tour.id}
               className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition duration-300" > <Link to="/">
-              <img src={tour.image} alt={tour.title} className="w-full h-80 object-cover" />
-              <div className="p-4">
-                <h2 className="text-xl font-semibold mb-2">{tour.title}</h2>
-                <p className="text-gray-600 mb-3">{tour.description}</p>
-                <span className="text-black font-bold">{tour.price}</span>
-              </div>
+                <img src={tour.image} alt={tour.title} className="w-full h-80 object-cover" />
+                <div className="p-4">
+                  <h2 className="text-xl font-semibold mb-2">{tour.title}</h2>
+                  <p className="text-gray-600 mb-3">{tour.description}</p>
+                  <span className="text-black font-bold">{tour.price}</span>
+                </div>
               </Link>
             </div>
           ) )}
