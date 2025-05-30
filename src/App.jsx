@@ -16,6 +16,7 @@ import Tips from './pages/Tips/Tips';
 import Gallery from './pages/Gallery/Gallery';
 import Contact from './pages/Contact/Contact';
 import Guid from './pages/Guide/Guid';
+import './index.css'
 // import Chatai from './pages/Chatai/Chatai';
 
 // Combine full homepage layout into one component
