@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 const First = () => {
-    const [menuOpen, setMenuOpen] = useState(false);
+    const [ menuOpen, setMenuOpen ] = useState( false );
 
     return (
         <div className="min-h-screen w-full relative">
@@ -15,7 +15,7 @@ const First = () => {
                 {/* Hamburger Icon for Mobile */}
                 <button
                     className="lg:hidden text-3xl text-white z-50"
-                    onClick={() => setMenuOpen(!menuOpen)}
+                    onClick={() => setMenuOpen( !menuOpen )}
                 >
                     ☰
                 </button>
@@ -49,12 +49,12 @@ const First = () => {
                 />
 
                 {/* Hero Text */}
-                <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-center px-4">
+                <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white      text-center px-4">
                     <div className="bg-white/50 backdrop-blur-md rounded-2xl w-fit mx-auto p-1 text-sm sm:text-base md:text-xl px-4 mb-4">
                         The Best Place to Start Your Adventure
                     </div>
 
-                    <h1 className="text-xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-7xl font-sans leading-tight transition-transform duration-[2000ms] hover:translate-y-[-10px]">
+                    <h1 className="  md:text-7xl text-4xl mx-4  font-sans leading-tight transition-transform duration-[2000ms] hover:translate-y-[-10px]">
                         Embark on <i>Journey</i><br />
                         not <i>just</i> destinations<br />
                         with our <i>trips.</i>

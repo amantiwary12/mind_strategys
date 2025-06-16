@@ -5,6 +5,7 @@ import { GoogleMap, LoadScript } from '@react-google-maps/api';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay } from 'swiper/modules';
 import 'swiper/css';
+import Footer from '../Footer';
 
 const containerStyle = {
   width: '100%',
@@ -82,8 +83,8 @@ const Gallery = () => {
         <LoadScript googleMapsApiKey="AIzaSyAc5YcvUBhTJjkAVmcqM5_aSbgdpAXeC60">
           <GoogleMap mapContainerStyle={containerStyle} center={center} zoom={10} />
         </LoadScript>
-        <div className="text-center mt-4 text-gray-700">
-          <p>Latitude: {latitude}</p>
+        <div className="text-center mt-4 text-gray-700 bg-slate-600 text-white rounded p-2  ">
+          <p >Latitude: {latitude}</p>
           <p>Longitude: {longitude}</p>
         </div>
       </div>
@@ -91,7 +92,7 @@ const Gallery = () => {
       {/* Image Slider Section */}
       <div className="py-12 px-4">
         <div className="flex justify-center items-center">
-          <h1 className="text-3xl sm:text-5xl font-semibold flex gap-2 text-center">
+          <h1 className="text-3xl sm:text-5xl font-semibold flex gap-2 text-center ">
             Journey in <span className="font-serif italic">Culture</span>
           </h1>
         </div>
@@ -130,6 +131,7 @@ const Gallery = () => {
           <h1 className="text-white text-3xl sm:text-5xl font-semibold italic">Explore Through Lens</h1>
         </div>
       </div>
+      <Footer/>
     </div>
   );
 };

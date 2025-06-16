@@ -134,11 +134,11 @@ const Tips = () => {
   }, [] );
 
   return (
-    <div>
+    <div className='bg-black'>
       <div>
         <nav className="flex items-center justify-between px-6 py-4 w-full z-50 absolute bg-white shadow-md">
           <div>
-            <h1 className="text-2xl font-bold cursor-pointer">
+            <h1 className="text-2xl font-bold cursor-pointer " >
               <Link to="/">Mind-strategy</Link>
             </h1>
           </div>

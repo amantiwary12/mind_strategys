@@ -17,21 +17,25 @@ import Gallery from './pages/Gallery/Gallery';
 import Contact from './pages/Contact/Contact';
 import Guid from './pages/Guide/Guid';
 import './index.css'
+import Chatai from './pages/Chatai/Chatai';
+
 // import Chatai from './pages/Chatai/Chatai';
 
 // Combine full homepage layout into one component
 const HomePage = () => (
-  <>
-  {/* AIzaSyCgagcHqqAhnl0pwsfV6PE_jVzrpUMf5qQ */}
+  
+  <div >
+    {/* AIzaSyCgagcHqqAhnl0pwsfV6PE_jVzrpUMf5qQ */}
     <First />
     <Exprience />
     <Video />
     <Ourpage />
     <Bgimage />
     <Footer />
-    {/* <Chatai/> */}
 
-  </>
+    <Chatai/>
+</div>
+  
 );
 
 const router = createBrowserRouter( [
