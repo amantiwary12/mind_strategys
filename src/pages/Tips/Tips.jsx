@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import Chatai from '../Chatai/Chatai';
+import Footer from '../Footer';
 
 
 const Tips = () => {
@@ -22,7 +23,7 @@ const Tips = () => {
           "id": 1,
           "destination": "Manali, Himachal Pradesh",
           "duration": "5 Days / 4 Nights",
-          "price": 14999,
+          "price": "$ 14999",
           "packageType": "Adventure",
           image: 'https://cdn.prod.website-files.com/6704980959c22352c2589f32/6716efc40cd3dc560ef01ab9_Journey%202-p-500.png',
           "rating": 4.7,
@@ -32,7 +33,7 @@ const Tips = () => {
           "id": 2,
           "destination": "Goa",
           "duration": "4 Days / 3 Nights",
-          "price": 12999,
+          "price":"$ 12999" ,
           image: 'https://cdn.prod.website-files.com/670de0ed891c270ca4643299/6710649d3ff4a5f72390a7b3_Trip%2001%20Cover-p-500.png',
           "packageType": "Beach",
           "rating": 4.5,
@@ -42,7 +43,7 @@ const Tips = () => {
           "id": 3,
           "destination": "Kerala Backwaters",
           "duration": "6 Days / 5 Nights",
-          "price": 17999,
+          "price": "$ 17999",
           image: 'https://cdn.prod.website-files.com/670de0ed891c270ca4643299/67106535be89304a2b436fc8_Trip%2002%20Cover-p-500.png',
           "packageType": "Romantic",
           "rating": 4.8,
@@ -52,7 +53,7 @@ const Tips = () => {
           "id": 4,
           "destination": "Leh-Ladakh",
           "duration": "7 Days / 6 Nights",
-          "price": 22999,
+          "price":"$ 22999",
           "packageType": "Adventure",
           image: 'https://cdn.prod.website-files.com/670de0ed891c270ca4643299/671065a338dc662a34bb2a24_Trip%2003%20Cover-p-500.png',
           "rating": 4.9,
@@ -62,7 +63,7 @@ const Tips = () => {
           "id": 5,
           "destination": "Jaipur, Rajasthan",
           "duration": "3 Days / 2 Nights",
-          "price": 9999,
+          "price":"$ 9999",
           "packageType": "Cultural",
           image: 'https://cdn.prod.website-files.com/670de0ed891c270ca4643299/671065c6a336670f81df2fc2_Trip%2005%20Cover-p-500.png',
           "rating": 4.3,
@@ -189,13 +190,15 @@ const Tips = () => {
                   <p className="text-gray-600 mb-3 "><p>Added-</p>{ tour.includes}</p>
                   <p className="text-gray-600 mb-3 flex gap-2"><p>rating</p>{ tour.rating}</p>
                   <p className="text-gray-600 mb-3 gap-2">{ tour.duration}</p>
-                  <span className="text-black font-bold">{tour.price}</span>
+                  <span className="text-black font-bold"><button className='bg-slate-200 rounded-md w-[100px] hover:scale-[1.1] hover:bg-black hover:text-white transform translate-x-10 duration-300'> {tour.price}</button></span>
                 </div>
               </Link>
             </div>
           ) )}
         </div>
+        <Footer/>
       </div>
+      
     </div>
   );
 };
